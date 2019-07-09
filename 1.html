@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // function highlight(string,...value){
+    // var highlightStr = value.map(val => {
+    //     return `<span class="highlight">${val}</span>`
+    // })
+    // return string.reduce((prev,curr,index) => {
+    //     console.log(curr);
+    //     return `${prev}${curr}${highlightStr[index] || ""}`;
+    // },"")
+    // }
+    // var user = "博一";
+    // var food = "烧鸡";
+    // var endStr = highlight`${user}喜欢的食物是${food}`;
+    // document.body.innerHTML = endStr;
+    function f() {
+        console.log("i am outside!");
+    }
+    (function () {
+        if (false) {
+            function f() {
+                console.log("i am indside!");
+            }
+        }
+        f();
+    }())
+</script>
+
+</html>
